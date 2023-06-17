@@ -190,13 +190,16 @@ body {
     .tab-content {
         top: 0;
       }
-  }
+}
 
-  @media screen  and (min-width : 500px) and (max-width: 739px) {
-    .menu-right {
-        display : none;
-    }
-    .item-mob {
-        display : block;
-    }
+@media screen  and (max-width: 739px) {
+  .menu-right {
+      display : none;
   }
+  .item-mob {
+      display : block;
+  }
+  .register-diagnose {
+    margin-left: 0
+  }
+}

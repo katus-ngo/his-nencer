@@ -1,0 +1,196 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat";
+  font-size: 16px;
+  background-color: #f5f5f5;
+}
+
+#header {
+  background-color: #313a46;
+  position: relative;
+}
+.menu-container li {
+  line-height: 20px;
+}
+.menu-container .menu-left,
+.menu-right {
+  display: flex;
+  align-items: center;
+}
+.menu-left {
+  width: 80%;
+}
+.menu-right {
+  width: 20%;
+  justify-content: flex-end;
+}
+.menu-left li,
+.menu-right li {
+  color: #8391a2;
+  padding: 15px 20px;
+}
+.nav-item a {
+  text-decoration: none;
+  color: #8391a2;
+  font-weight: 500;
+}
+.nav-item a:hover {
+  cursor: pointer;
+  color: #ffffff !important;
+}
+.nav-item .active {
+  color: #ffffff;
+}
+.tab_content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background-color: #ffffff;
+  /* box-shadow: inset 0 0 10px #000000; */
+}
+.tab_content.active {
+  display: block;
+}
+.tab-content {
+  display: none;
+  text-align: center;
+  transform: translateY(15px);
+  animation: tab_fade 0.4s ease 1 forwards;
+}
+.tab-content.active {
+  display: block;
+}
+
+@keyframes tab_fade {
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+.register-diagnose {
+  padding: 15px 20px;
+}
+.register-diagnose li p {
+  margin: 0;
+}
+.register-diagnose li {
+  line-height: 17px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px;
+  font-size: 14px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  text-align: center;
+  color: #8391a2;
+}
+.register-diagnose a {
+  text-decoration: none;
+  color: #313a46;
+}
+.register-item.active {
+  color: #313a46;
+}
+.register-diagnose li:hover {
+  color: #313a46;
+  cursor: pointer;
+}
+.nav-bar {
+  display: none !important;
+  color: #ffffff;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+}
+.logo {
+  color: #ffffff;
+  padding: 10px 20px;
+}
+.jump {
+  transform: translateX(0) !important;
+}
+.tab-content {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  width: 100%;
+  background-color: #ffffff;
+}
+.item-mob {
+    display : none;
+}
+@media screen and (max-width: 1200px) {
+    .menu-left > .nav {
+      flex-direction: column;
+      position: absolute;
+      background: #313a46;
+      top: 100%;
+      height: 90vh;
+      min-width: 20vw;
+    }
+     .menu-left li {
+      position : relative;
+    }
+    .nav-bar {
+      display: block !important;
+    }
+    .tab-content {
+      position : absolute;
+      left : 100% !important;
+    }
+    .register-diagnose {
+      background : #fff;
+    }
+    .tab_content {
+      width: fit-content;
+      position: absolute;
+      left: 20vw;
+      background-color: #f5f5f5;
+    }
+    #tab-5 .register-diagnose {
+      position : absolute;
+      bottom : 0;
+    }
+    #tab-5 {
+      top : unset;
+    }
+    .menu-right {
+      width: 50%;
+      justify-content: flex-end;
+    }
+    .register-diagnose {
+      flex-direction: column;
+    }
+    .register-diagnose li {
+      flex-direction: row;
+      justify-content: flex-start;
+      padding: 10px 0;
+    }
+    .register-diagnose li p {
+      margin-left: 4px;
+    }
+    .tab-content {
+        top: 0;
+      }
+  }
+
+  @media screen  and (min-width : 500px) and (max-width: 739px) {
+    .menu-right {
+        display : none;
+    }
+    .item-mob {
+        display : block;
+    }
+  }

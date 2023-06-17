@@ -45,6 +45,7 @@ body {
 }
 .nav-item .active {
   color: #ffffff;
+  font-weight: bold;
 }
 .tab_content {
   display: none;
@@ -66,6 +67,7 @@ body {
 }
 .tab-content.active {
   display: block;
+  /* padding-left: 90px */
 }
 
 @keyframes tab_fade {
@@ -76,6 +78,7 @@ body {
 }
 .register-diagnose {
   padding: 15px 20px;
+  margin-left: 80px
 }
 .register-diagnose li p {
   margin: 0;
@@ -98,6 +101,9 @@ body {
 .register-diagnose a {
   text-decoration: none;
   color: #313a46;
+}
+.register-item {
+  gap: 8px
 }
 .register-item.active {
   color: #313a46;
